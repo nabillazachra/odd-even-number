@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aritmethic App - Weekly</title>
+	<link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/34464790?s=220&v=4">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="first">
+			<h1>Your Odd, Even, and Prime App</h1>
+			<form id="form">
+				<div class="operand1">
+					<label for="operand-1">Operand 1</label>
+					<input type="number" name="operand-1" id="operand-1" placeholder="Input Operand 1" required>
+				</div>
+				<div class="button">
+					<button class="odd" id="odd" onclick="calculator(event, 'odd')">Odd</button>
+					<button class="even" id="even" onclick="calculator(event, 'even')">Even</button>
+					<button class="prime" id="prime" onclick="calculator(event, 'prime')">Prime</button>
+					<button type="reset" class="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+		<div class="second">
+			<div class="result card">
+				<h1>RESULT</h1>
+			<div class="position">
+				<span id="result-display">0</span>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
